@@ -6,16 +6,17 @@ export const Hero = () => {
     <div className="bg-hero bg-cover bg-center min-h-[600px] flex items-center justify-center text-center relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-background/80"></div>
       
-      {/* Large background mustache */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <img 
-          src="/lovable-uploads/0130b243-17e9-419f-a296-fde90b9a85b3.png" 
-          alt="Mustache Background"
-          className="w-96 h-auto opacity-10 animate-fade-in"
-        />
-      </div>
+      {/* Content wrapper with mustache background */}
+      <div className="relative max-w-3xl px-4 z-10">
+        {/* Large background mustache positioned behind content */}
+        <div className="absolute inset-0 flex items-center justify-center -z-10">
+          <img 
+            src="/lovable-uploads/0130b243-17e9-419f-a296-fde90b9a85b3.png" 
+            alt="Mustache Background"
+            className="w-96 h-auto opacity-20 animate-fade-in"
+          />
+        </div>
 
-      <div className="max-w-3xl px-4 relative z-10">
         <h1 className="font-serif text-5xl md:text-6xl font-bold mb-2 text-gold animate-fade-in">Sr. Oliveira</h1>
         <p className="text-2xl mb-1 text-white font-light tracking-wider">BARBEARIA</p>
         <p className="text-xl mb-8 text-gray-300">Premium grooming for the modern gentleman</p>
