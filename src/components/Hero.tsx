@@ -13,7 +13,7 @@ export const Hero = () => {
           <img 
             src="/lovable-uploads/0130b243-17e9-419f-a296-fde90b9a85b3.png" 
             alt="Mustache Background"
-            className="w-96 h-auto opacity-20 animate-fade-in"
+            className="w-[500px] h-auto opacity-70 animate-fade-in"
           />
         </div>
 
