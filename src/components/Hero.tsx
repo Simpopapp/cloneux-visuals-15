@@ -3,12 +3,11 @@ import { BookingDialog } from "./BookingDialog";
 
 export const Hero = () => {
   return (
-    <div className="bg-hero bg-cover bg-center min-h-[600px] flex items-center justify-center text-center relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-background/80"></div>
+    <div className="bg-hero bg-cover bg-center min-h-[80vh] flex items-center justify-center text-center relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background/90"></div>
       
-      {/* Content wrapper with mustache background */}
-      <div className="relative max-w-3xl px-4 z-10">
-        {/* Large background mustache positioned behind content */}
+      <div className="relative max-w-4xl mx-auto px-6 py-16 z-10">
+        {/* Background mustache with improved positioning */}
         <div className="absolute inset-0 flex items-center justify-center -z-10">
           <img 
             src="/lovable-uploads/0130b243-17e9-419f-a296-fde90b9a85b3.png" 
@@ -17,12 +16,20 @@ export const Hero = () => {
           />
         </div>
 
-        <h1 className="font-serif text-5xl md:text-6xl font-bold mb-2 text-gold animate-fade-in">Sr. Oliveira</h1>
-        <p className="text-2xl mb-1 text-white font-light tracking-wider">BARBEARIA</p>
-        <p className="text-xl mb-8 text-gray-300">Premium grooming for the modern gentleman</p>
+        {/* Content with improved spacing and typography */}
+        <h1 className="font-serif text-6xl md:text-7xl font-bold mb-4 text-gold animate-fade-in tracking-tight">
+          Sr. Oliveira
+        </h1>
+        <p className="text-2xl md:text-3xl mb-3 text-white font-light tracking-wider uppercase">
+          Barbearia
+        </p>
+        <p className="text-xl md:text-2xl mb-10 text-gray-300 max-w-2xl mx-auto">
+          Premium grooming for the modern gentleman
+        </p>
+        
         <BookingDialog defaultService="">
-          <Button className="bg-gold hover:bg-gold-light text-black font-bold px-8 py-3 rounded-md shadow-lg hover:shadow-gold/20 transition-all duration-300 hover:scale-[1.02]">
-            AGENDAR HORÁRIO
+          <Button className="bg-gold hover:bg-gold-light text-black font-bold px-10 py-6 text-lg rounded-md shadow-xl hover:shadow-gold/20 transition-all duration-300 hover:scale-[1.02] uppercase tracking-wider">
+            Agendar Horário
           </Button>
         </BookingDialog>
       </div>
